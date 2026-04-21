@@ -3,22 +3,18 @@ package io.openems.edge.meter.landis.dlms;
 import org.osgi.service.metatype.annotations.AttributeDefinition;
 import org.osgi.service.metatype.annotations.ObjectClassDefinition;
 
-import io.openems.common.types.MeterType;
 
 @ObjectClassDefinition(name = "Meter Landis DLMS", description = "A Landis meter that communicates via DLMS.")
 @interface Config {
 
 	@AttributeDefinition(name = "Component-ID", description = "Unique ID of this Component")
-	String id() default "meter0";
+	String id() default "meter-landis-0";
 
 	@AttributeDefinition(name = "Alias", description = "Human-readable name of this Component; defaults to Component-ID")
 	String alias() default "";
 
 	@AttributeDefinition(name = "Is enabled?", description = "Is this Component enabled?")
 	boolean enabled() default true;
-
-	@AttributeDefinition(name = "Meter-Type", description = "What is this meter used for?")
-	MeterType type() default MeterType.GRID;
 
 	@AttributeDefinition(name = "DLMS Bridge-ID", description = "ID of DLMS Bridge.")
 	String dlms_id() default "bridgeDlmsSerial0";
@@ -31,6 +27,6 @@ import io.openems.common.types.MeterType;
 
 	@AttributeDefinition(name = "Use Logical Name Referencing", description = "Standard is LN (true). Use false for SN referencing meters.")
 	boolean useLogicalNameReferencing() default false;
-	
+
 	String webconsole_configurationFactory_nameHint() default "Meter Landis DLMS [{id}]";
 }

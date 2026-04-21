@@ -71,7 +71,6 @@ public class LandisDlmsMeterImpl extends AbstractOpenemsDlmsComponent
 		if (super.activate(context, config.id(), config.alias(), config.enabled(), this.cm, "dlms", config.dlms_id())) {
 			return;
 		}
-		this.meterType = config.type();
 	}
 
 	@Modified
@@ -79,7 +78,6 @@ public class LandisDlmsMeterImpl extends AbstractOpenemsDlmsComponent
 		if (super.modified(context, config.id(), config.alias(), config.enabled(), this.cm, "dlms", config.dlms_id())) {
 			return;
 		}
-		this.meterType = config.type();
 	}
 
 	@Override
@@ -107,7 +105,7 @@ public class LandisDlmsMeterImpl extends AbstractOpenemsDlmsComponent
 	 * Method name for the JSON-RPC endpoint.
 	 */
 	public static final String GET_DLMS_PROFILE_METHOD = "getDlmsProfile";
-	public static final String GET_DLMS_BILLING_VALUE = "getBillingValues";
+	public static final String GET_DLMS_BILLING_VALUE = "getDlmsBillingValues";
 
 	@Override
 	public void buildJsonApiRoutes(JsonApiBuilder builder) {

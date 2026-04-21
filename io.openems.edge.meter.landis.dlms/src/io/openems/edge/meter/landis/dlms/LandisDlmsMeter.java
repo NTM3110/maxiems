@@ -20,8 +20,6 @@ public interface LandisDlmsMeter extends OpenemsComponent {
 		 * <li>Unit: Watt (W)
 		 * </ul>
 		 */
-		LOGICAL_NAME(Doc.of(OpenemsType.STRING) //
-				.accessMode(AccessMode.READ_ONLY)), //
 		ACTIVE_POWER_EXPORT(Doc.of(OpenemsType.INTEGER) //
 				.unit(Unit.WATT_HOURS)
 				.accessMode(AccessMode.READ_ONLY)),

@@ -236,4 +236,8 @@ public class TimedataInfluxDbImpl extends AbstractOpenemsComponent
 		// TODO implement this method
 		return new Timeranges();
 	}
+
+	public InfluxConnector getInfluxConnector() {
+		return this.influxConnector;
+	}
 }

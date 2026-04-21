@@ -6,8 +6,8 @@
 
 -runproperties:\
 	org.osgi.service.http.port=8080,\
-	felix.cm.dir=/home/shou/Documents/ATEnergy/EMS/openems/config,\
-	openems.data.dir=/home/shou/Documents/ATEnergy/EMS/openems/data,\
+	felix.cm.dir=C:/Users/shou/Documents/ATEnergy/MaxiEMS/maxiems/config,\
+	openems.data.dir=C:/Users/shou/Documents/ATEnergy/MaxiEMS/maxiems/data,\
 	org.apache.felix.eventadmin.Timeout=0,\
 	org.ops4j.pax.logging.DefaultServiceLog.level=WARN
 
@@ -57,6 +57,7 @@
 	bnd.identity;id='io.openems.edge.bridge.mqtt',\
 	bnd.identity;id='io.openems.edge.bridge.onewire',\
 	bnd.identity;id='io.openems.edge.bridge.dlms',\
+	bnd.identity;id='io.openems.edge.bridge.edmi',\
 	bnd.identity;id='io.openems.edge.common',\
 	bnd.identity;id='io.openems.edge.controller.api.backend',\
 	bnd.identity;id='io.openems.edge.controller.api.common',\
@@ -172,6 +173,7 @@
 	bnd.identity;id='io.openems.edge.meter.discovergy',\
 	bnd.identity;id='io.openems.edge.meter.eastron',\
 	bnd.identity;id='io.openems.edge.meter.landis.dlms',\
+	bnd.identity;id='io.openems.edge.meter.edmi',\
 	bnd.identity;id='io.openems.edge.meter.hager',\
 	bnd.identity;id='io.openems.edge.meter.janitza',\
 	bnd.identity;id='io.openems.edge.meter.kdk',\
@@ -261,6 +263,7 @@
 	io.openems.edge.bridge.mqtt;version=snapshot,\
 	io.openems.edge.bridge.onewire;version=snapshot,\
 	io.openems.edge.bridge.dlms;version=snapshot,\
+	io.openems.edge.bridge.edmi;version=snapshot,\
 	io.openems.edge.common;version=snapshot,\
 	io.openems.edge.controller.api;version=snapshot,\
 	io.openems.edge.controller.api.backend;version=snapshot,\
@@ -396,6 +399,7 @@
 	io.openems.edge.meter.weidmueller;version=snapshot,\
 	io.openems.edge.meter.ziehl;version=snapshot,\
 	io.openems.edge.meter.landis.dlms;version=snapshot,\
+	io.openems.edge.meter.edmi;version=snapshot,\
 	io.openems.edge.onewire.thermometer;version=snapshot,\
 	io.openems.edge.predictor.api;version=snapshot,\
 	io.openems.edge.predictor.lstm;version=snapshot,\
@@ -445,6 +449,7 @@
 	io.openems.wrapper.eu.chargetime.ocpp;version=snapshot,\
 	io.openems.wrapper.fastexcel;version=snapshot,\
 	io.openems.wrapper.gson;version=snapshot,\
+	io.openems.wrapper.imr-java-client;version=snapshot,\
 	io.openems.wrapper.influxdb-client-core;version=snapshot,\
 	io.openems.wrapper.influxdb-client-java;version=snapshot,\
 	io.openems.wrapper.influxdb-client-utils;version=snapshot,\

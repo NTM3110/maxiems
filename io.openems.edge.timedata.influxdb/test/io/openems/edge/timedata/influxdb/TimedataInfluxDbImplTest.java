@@ -23,9 +23,9 @@ public class TimedataInfluxDbImplTest {
 						.setId("influx0") //
 						.setQueryLanguage(INFLUX_QL) //
 						.setUrl("http://localhost:8086") //
-						.setOrg("-") //
-						.setApiKey("username:password") //
-						.setBucket("database/retentionPolicy") //
+						.setOrg("AT") //
+						.setApiKey("minhnt:ATEnergy@12") //
+						.setBucket("demo") //
 						.setMeasurement("data") //
 						.setNoOfCycles(1) //
 						.setMaxQueueSize(5000) //
